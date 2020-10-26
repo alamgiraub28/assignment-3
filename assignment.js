@@ -50,12 +50,12 @@ function tinyFriend(name){
 var smallestName = name[0];
 for(var i =0; i < name.length; i++){
     var currentName = name[i];
-    if (currentName > smallestName){
+    if (smallestName.length > currentName.length){
         smallestName = currentName;
         }
     }
     return smallestName;
 }
 
-var smallestName = tinyFriend(['alamgir', 'neelaGP', 'tanny', 'hossain']);
+var smallestName = tinyFriend(['alamgir', 'bilkisGP', 'tanny', 'hossainin']);
 console.log(smallestName);
