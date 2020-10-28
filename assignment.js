@@ -21,20 +21,20 @@ console.log(woodResult);
 
 //brickCalculator
 function brickCalculator(storieds){
-    if(storieds<=10){
-        var feetCount=storieds * 15;
-        var totalBricks=feetCount * 1000;
-        console.log(totalBricks);
+    if(storieds <=10 ){
+        var feetCount= storieds * 15;
+        var totalBricks =feetCount * 1000;
+        return totalBricks;
     }
-    else if(storieds<=20){
+    else if(storieds > 10 && storieds <= 20){
         var feetCount=storieds * 12;
         var totalBricks=feetCount * 1000;
-        console.log(totalBricks);
+        return totalBricks;
     }
-    else if(storieds<=50){
+    else if(storieds >20){
         var feetCount=storieds * 10;
         var totalBricks=feetCount * 1000;
-        console.log(totalBricks);
+        return totalBricks;
     }
     else {
         console.log("Invalid Input");
@@ -42,7 +42,7 @@ function brickCalculator(storieds){
     return totalBricks;
 }
 
-var totalBricks = brickCalculator(22);
+var totalBricks = brickCalculator(19);
 console.log(totalBricks);
 
 //tinyFriend
